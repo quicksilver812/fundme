@@ -8,8 +8,13 @@ contract FundMe{
 
     uint256 minimumUSD = 5e18;
 
+    address[] public funders;
+    mapping(address => uint256) public addressToAmountFunded;
+
     function fund() public payable{
         require(msg.value.convert() >= minimumUSD, "Not enough ethereum");
+        funders.push(msg.sender);
+        addressToAmountFunded[msg.sender]+=msg.value;
     }
 }
 
