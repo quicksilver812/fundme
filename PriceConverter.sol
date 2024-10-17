@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.18;
 
-import {AggregatorV3Interface} from "/Users/allendsouza/Desktop/Codes/Blockchain/fundme/AggregatorV3Interface.sol";
+import {AggregatorV3Interface} from "AggregatorV3Interface.sol";
 
 library PriceConverter{
-    
+
     function getPrice()view public returns(uint256){
         AggregatorV3Interface priceFeed = AggregatorV3Interface(0x694AA1769357215DE4FAC081bf1f309aDC325306);
         (,int256 price,,,) = priceFeed.latestRoundData();
