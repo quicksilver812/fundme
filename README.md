@@ -20,7 +20,7 @@ FundMe is a smart contract built with Solidity that allows users to contribute f
 
 2. **Upload Files**:
    - Click on the "File Explorers" panel on the left.
-   - Create a new folder (e.g., `fundme`) and upload the following files:
+   - Create a new folder (e.g., `contracts`) and upload the following files:
      - `FundMe.sol`
      - `AggregatorV3Interface.sol`
      - `PriceConverter.sol`
